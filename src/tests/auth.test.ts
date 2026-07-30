@@ -22,7 +22,7 @@ test("returns null when the ApiKey header is missing the key", () => {
 });
 
 test("the valid, well-formed case", () => {
-    const headers = { authorization: "ApiKey somerandomkey123" };
-    const result = getAPIKey(headers);
-    expect(result).toBe("somerandomkey123");
+  const headers = { authorization: "ApiKey somerandomkey123" };
+  const result = getAPIKey(headers);
+  expect(result).toBe("somerandomkey123");
 });
