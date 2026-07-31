@@ -34,7 +34,6 @@ export async function handlerUsersGet(req: Request, res: Response, user: User) {
 }
 
 function generateRandomSHA256Hash(): string {
-  
   return crypto
     .createHash("sha256")
     .update(crypto.randomBytes(32))
